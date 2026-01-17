@@ -1,0 +1,36 @@
+###
+CONSUMER patient-consumer-test
+topic: patient
+partitions: 1
+from: 1
+###
+CONSUMER consumer-group-id
+topic: json-events
+partitions: 1
+from: 1
+
+###
+PRODUCER non-keyed-json-message
+topic: json-events
+{
+    "type": "my_test_event-{{random.number}}"
+}
+###
+PRODUCER patient-producer-test
+topic: patient
+{
+    "type": "my_test_event-{{random.number}}"
+}
+
+###
+CONSUMER consumer-patient-test
+topic: patient
+partitions: 0
+from: 1
+
+###
+PRODUCER patient-producer-test
+topic: patient
+{
+    "type": "my_test_event-{{random.number}}"
+}

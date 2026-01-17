@@ -1,0 +1,9 @@
+### GET request to get all patients via API Gateway
+GET http://localhost:4004/api/patients
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlckB0ZXN0LmNvbSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc2ODM4NDkxNSwiZXhwIjoxNzY4NDIwOTE1fQ.uuqnf_Kobr1KhAyRN_Mgfy2H8X03zZ5vWZ2rk2kcSOk
+###
+
+### GET request (direct to service)
+GET http://localhost:4000/patients
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlckB0ZXN0LmNvbSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc2ODM4NDkxNSwiZXhwIjoxNzY4NDIwOTE1fQ.uuqnf_Kobr1KhAyRN_Mgfy2H8X03zZ5vWZ2rk2kcSOk
+###
